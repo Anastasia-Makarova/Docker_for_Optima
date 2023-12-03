@@ -2,10 +2,10 @@ import os
 import shlex
 from pathlib import Path
 from abc import ABC, abstractmethod
-from Optima.Address_book import AddressBook, Record, DuplicatedPhoneError
-from Optima.Notes import Note, NotesList
-from Optima.Folder_sorter import Create_txt_report, sort_folder
-from Optima.find_command import InputOutput, get_command
+from Address_book import AddressBook, Record, DuplicatedPhoneError
+from Notes import Note, NotesList
+from Folder_sorter import Create_txt_report, sort_folder
+from find_command import InputOutput, get_command
 
 
 class InputOutput (ABC):

@@ -1,7 +1,7 @@
 FROM python:3.11.6-alpine3.17
 
 
-ENV APP /WEB_HW2
+ENV APP /Docker_for_Optima
 
 
 WORKDIR $APP
@@ -10,9 +10,9 @@ WORKDIR $APP
 COPY . .
 
 
-RUN pip install .
+#RUN #python install -r setup.py
 
 
 
-ENTRYPOINT ["python", "main.py"]
+ENTRYPOINT ["python" , "Optima/main.py"]
 
